@@ -25,3 +25,5 @@ export const initializeLogger = async () => {
     throw new Error("Failed to initialize logging middleware");
   }
 };
+
+// auth .js
