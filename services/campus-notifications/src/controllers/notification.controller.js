@@ -70,4 +70,6 @@ export const getPriorityInbox = async (req, res) => {
       details: error.message
     });
   }
+
+  //notification service me priority inbox generate karne ka logic hoga, jisme placement, result, event ko priority denge aur unread notifications ko filter karenge, fir unko date ke hisab se sort karenge aur limit ke hisab se return karenge
 };
