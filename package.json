@@ -1,0 +1,22 @@
+{
+  "name": "vehicle-notification-monorepo",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "shared",
+    "services/*"
+  ],
+  "scripts": {
+    "start:vehicle": "npm start -w services/vehicle-maintenance",
+    "start:notification": "npm start -w services/campus-notifications",
+    "test": "npm test --workspaces"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.17.0"
+  }
+}
